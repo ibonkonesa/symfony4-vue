@@ -1,5 +1,8 @@
 <template>
-    <h1>Hello null! </h1>
+
+    <div>
+    <router-view/>
+    </div>
 </template>
 
 <script>
