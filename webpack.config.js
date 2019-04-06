@@ -1,4 +1,3 @@
-const { VueLoaderPlugin } = require('vue-loader');
 let Encore = require('@symfony/webpack-encore');
 
 Encore
@@ -12,6 +11,6 @@ Encore
         resolveUrlLoader: false,
     })
     .enableVueLoader()
-    .addPlugin(new VueLoaderPlugin());
+    .enableSingleRuntimeChunk();
 
 module.exports = Encore.getWebpackConfig();

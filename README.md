@@ -13,7 +13,7 @@ Symfony 4 skeleton with Vue, Vuex, Vue-router and Webpack (and more!)
 
 -Axios is prototyped as $http variable
 
-## Installing
+## Using this boilerplate
 
 Clone this repository
 
@@ -62,3 +62,13 @@ SassLoader is activated, so all changes on /assets/js/app.scss will be compiled 
 Axios are prototyped as $http. This service will be available at the whole Vue app.
 
 Vuex and Vue-router are included too. Be free to add as routes and stores as you want.
+
+
+#### UPDATES
+
+April 2019 - Although encore server worked well with spread operator
+(...) while development, if you tried to build a production compilation
+it did not work. I have updated @symfony/webpack-encore package in order
+to get this working without the use of babel plugins. I also updated the
+assets folder skeleton to have a page oriented structure.
+
