@@ -5,6 +5,10 @@ Symfony 4 skeleton with Vue, Vuex, Vue-router and Webpack (and more!)
 ## What's included
 -Symfony 4.1.0 skeleton
 
+-Docker-compose development environment
+
+-Redis cache
+
 -Twig, Annotations, Webserver and Maker bundles
 
 -Encore webpack with VueLoader and SassLoader configured
@@ -72,3 +76,7 @@ it did not work. I have updated @symfony/webpack-encore package in order
 to get this working without the use of babel plugins. I also updated the
 assets folder skeleton to have a page oriented structure.
 
+October 2019 - Added docker-compose file and resources to build images
+able to work in this environment. Added a redis cache POF. This
+component should be mandatory in all project developed in this century,
+because never was easier implementing such enhancement.

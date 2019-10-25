@@ -3,7 +3,6 @@
 namespace App\Controller;
 
 use Symfony\Component\Cache\Adapter\AdapterInterface;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -21,7 +20,7 @@ class DefaultController extends Controller
     /**
      * @Route("/hello", name="hello")
      */
-    public function hello(Request $request, AdapterInterface $cache)
+    public function hello(AdapterInterface $cache)
     {
         $hello = $cache->getItem('hello');
 
