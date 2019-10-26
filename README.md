@@ -45,7 +45,17 @@ Execute built in Symfony web server
 ```sh
 $ php bin/console server:run
 ```
-It will start a server accesible at http://localhost:8080
+It will start a server accessible at http://localhost:8080
+
+or
+
+```sh
+$ docker-compose up
+```
+
+Server will be accessible at http://localhost:8888 and Redis caché will
+be available
+
 
 ## Vue development
 
